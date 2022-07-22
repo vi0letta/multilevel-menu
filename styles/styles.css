@@ -1,0 +1,97 @@
+body {
+    background-color: bisque;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-box {
+    background-color: darkslategray;
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu-item {
+    padding-top: 40px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    width: 100%;
+    display: none;
+}
+
+.menu-item:hover .nav-menu {
+    display: block;
+}
+
+.nav-btn {
+    width: 100%;
+    padding: 15px 10px;
+    color: beige;
+    background-color: darkslategray;
+    border: none;
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-btn:hover {
+    color: darkslategray;
+    background-color: #fff;
+}
+
+.nav {
+    position: relative;
+    cursor: pointer;
+}
+
+.sub-nav-menu {
+    position: absolute;
+    top: 45px;
+    left: 116px;
+    width: 100%;
+}
+
+.sub-nav-btn {
+    width: 100%;
+    padding: 15px 10px;
+    color: beige;
+    background-color: darkslategray;
+    border: none;
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+.submenu {
+    visibility: hidden; 
+    opacity: 0;
+    list-style: none;
+}
+
+li:hover > .submenu {
+    visibility: visible; 
+    opacity: 1;
+}
+
+
+.sub-nav-btn:hover {
+    color: darkslategray;
+    background-color: #fff;
+}
